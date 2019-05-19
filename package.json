@@ -1,0 +1,11 @@
+{
+  "name": "ts-ast-serializer",
+  "version": "0.0.0",
+  "description": "jest typescript ast snapshot serializer",
+  "repository": "git@github.com:harryparkdotio/ts-ast-serializer.git",
+  "author": "Harry Park <harry@harrypark.io>",
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
