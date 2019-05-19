@@ -17,6 +17,7 @@
       "error",
       { "overrides": { "constructors": "no-public" } }
     ],
+    "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-parameter-properties": "off",
     "array-callback-return": "error",
     "block-scoped-var": "error",

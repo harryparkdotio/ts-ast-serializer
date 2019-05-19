@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`serializes enum 1`] = `
+export enum WhatAnEnum {
+    RED = "RED",
+    GREEN = "GREEN",
+    BLUE = "BLUE"
+}
+`;
+
+exports[`serializes string literal + comment 1`] = `
+//this is a comment
+"abcd"
+`;
+
+exports[`serializes type alias 1`] = `type abc = any;`;

@@ -1,6 +1,8 @@
 {
   "name": "ts-ast-serializer",
   "version": "0.0.0",
+  "main": "index.js",
+  "types": "index.d.ts",
   "description": "jest typescript ast snapshot serializer",
   "repository": "git@github.com:harryparkdotio/ts-ast-serializer.git",
   "author": "Harry Park <harry@harrypark.io>",
@@ -8,8 +10,9 @@
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "tsc -p tsconfig.build.json",
+    "postbuild": "cp package.json dist && cp license dist && cp readme.md dist",
     "test": "jest",
-    "lint": "eslint 'src/**/*.ts'"
+    "lint": "eslint 'src/**/*.ts' 'test/**/*.ts'"
   },
   "dependencies": {},
   "devDependencies": {
@@ -27,6 +30,15 @@
     "ts-jest": "^24.0.2",
     "typescript": "^3.4.5"
   },
+  "peerDependencies": {
+    "typescript": "^3.0.0"
+  },
+  "keywords": [
+    "jest",
+    "snapshot",
+    "typescript",
+    "ast"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
